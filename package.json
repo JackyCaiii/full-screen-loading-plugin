@@ -1,7 +1,7 @@
 {
   "name": "@jackycai/full-screen-loading-plugin",
   "author": "jackycai",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "vue-full-screen-loading-plugin",
   "main": "plugin/full-screen-loading-plugin.umd.min.js",
   "private": false,
