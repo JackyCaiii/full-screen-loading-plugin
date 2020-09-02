@@ -1,9 +1,11 @@
 .DS_Store
 node_modules
 /dist
-public/
-src/
+/public
+/src
 babel.config.js
+*.map
+*.html
 
 
 # local env files

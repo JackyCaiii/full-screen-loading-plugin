@@ -1,11 +1,20 @@
 {
-  "name": "full-screen-loading-plugin",
+  "name": "@jackycai/full-screen-loading-plugin",
+  "author": "jackycai",
   "version": "0.1.0",
-  "private": true,
+  "description": "vue-full-screen-loading-plugin",
+  "main": "plugin/full-screen-loading-plugin.umd.min.js",
+  "private": false,
+  "keyword": [
+    "vue",
+    "npm",
+    "loading"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name full-screen-loading-plugin --dest plugin src/lib/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
