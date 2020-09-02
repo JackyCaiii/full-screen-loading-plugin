@@ -9,7 +9,7 @@ const LoadingPlugin = {
     document.body.appendChild(Profile.$el);
     if (options) {
       if (options.tips) {
-        Profile.tips = options.tips;
+        Profile.opTips = options.tips;
       }
     }
     Vue.prototype.$fullScreenLoading = Profile;

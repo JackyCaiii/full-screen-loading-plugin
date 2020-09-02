@@ -1,18 +1,27 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+// import HelloWorld from "@/components/HelloWorld.vue";
+import Vue from "vue";
+import FullScreenLoading from "../lib/index";
+Vue.use(FullScreenLoading);
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+
+  created () {
+     this.$fullScreenLoading.show("请求中...");
+     setTimeout(() => {
+       this.$fullScreenLoading.hide();
+     }, 2000);
+     setTimeout(() => {
+       this.$fullScreenLoading.show();
+     }, 3000);
   }
 };
 </script>
